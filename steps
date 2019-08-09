@@ -1,0 +1,16 @@
+pipenv --python 3.6 install django==2.2
+
+pipenv shell
+
+mkdir src
+cd src
+
+django-admin startproject try_django .
+
+python manage.py runserver
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+
